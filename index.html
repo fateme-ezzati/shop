@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Customize T-shirt-Printiviti</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+    <link type="text/css" rel="stylesheet" href="css/lightGallery.css" /> 
+    <link rel="stylesheet" href="css/lightgallery.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <main>
+        <!-- main header and menus -->
+        <header>
+            <!-- menu button for mobile -->
+            <div class="m_menu_controler"></div>
+            <!-- logo -->
+            <figure id="logo">
+                <a href="index.html"><img src="image/Printivity-logo.png" alt="Printiviti-logo" title="Printiviti"></a>
+            </figure>
+            <!-- desktop menu -->
+            <nav class="d_menu">
+                <ul>
+                    <li>
+                        <a href="#">phone cases</a>
+                        <!-- sub menu 1 -->
+                        <ul>
+                            <li><a href="#">Top slider listning</a></li>
+                            <li><a href="#">Left slidbar listning</a></li>
+                            <li><a href="#">BRANDS</a></li>
+                            <li>
+                                <a href="#">Apple</a>
+                                <span class="line"></span>
+                                <!-- sub menu 2-->
+                                <ul>
+                                    <li><a href="#">Apple1</a></li>
+                                    <li><a href="#">Apple1</a></li>
+                                    <li><a href="#">Apple1</a></li>
+                                    <li><a href="#">Apple1</a></li>
+                                    <li><a href="#">Apple1</a></li>
+                                    <li><a href="#">Apple1</a></li>
+                                    <li><a href="#">Apple1</a></li>
+                                    <li><a href="#">Apple1</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">asus</a></li>
+                            <li><a href="#">hTC</a></li>
+                            <li><a href="#">lG</a></li>
+                            <li><a href="#">nokia</a></li>
+                            <li><a href="#">lenivo</a></li>
+                            <li><a href="#">vivo</a></li>
+                            <li><a href="#">samsung</a></li>
+                            <li><a href="#">asus</a></li>
+                            <li><a href="#">asus</a></li>
+                            <li><a href="#">asus</a></li>
+                            <li><a href="#">asus</a></li>
+                            <li><a href="#">asus</a></li>
+                            <li><a href="#">asus</a></li>
+                        </ul>
+                        <!-- end of sub menu -->
+                    </li>
+                    <li><a href="#">t-shirts</a></li>
+                    <li><a href="#">Customize</a></li>    
+                </ul>
+            </nav>
+            <div>
+                <!-- search box -->
+                <form action="reg.php" method="get" name="searchbox" autocomplete="on">
+                    <label for="para1">
+                        <span>
+                            <i class="fas fa-search"></i>
+                        </span>
+                        <input type="text" name="search" id="para1" placeholder="search">
+                    </label>
+                </form>
+                <!-- shopping bag -->
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="#" class="wishlist">
+                                <i class="far fa-heart"></i>
+                            </a>
+                        </li>
+                        <li title="view your shopping cart">
+                            <a href="#">
+                                <i class="fa fa-shopping-bag"></i>
+                                <span>0</span>
+                            </a>
+                            <ul><li>no products in the cart.</li></ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <!-- part1 Customize T-shirt -->
+        <div class="part1">
+            <figure>
+                <img src="image/tricou-alb3-600x800.jpg" alt="T-shirt" id="main_pic">
+               <!-- zooming -->
+                <div onmousemove="mousepos(event)" id="zoom_pic">
+                    <img src="image/tricou-alb3.jpg" alt="T-shirt">
+                </div>
+                <figcaption>
+                    <!-- zoom gallery -->
+                    <i class="fas fa-search"></i>
+                    <div id="lightgallery">
+                        <a href="image/tricou-alb3.jpg">
+                            <img src="image/tricou-alb3-600x800.jpg" alt="T-shirt"/>
+                        </a>
+                    </div>
+                </figcaption>
+                
+            </figure>
+            <div class="customize">
+                <div>
+                    <header><h1>Customize T-shirt</h1></header>
+                    <h3>£15.00</h3>
+                    <h2>Feeling creative? Create your own custom t-shirt.</h2>
+                    <div class="customize_filter">
+                        <!-- size filter -->
+                        <div class="filter size">
+                            <h3>size</h3>
+                            <section>
+                                <div title="XS">
+                                    <h3>xS</h3>
+                                    <span></span>
+                                    <span>XS</span>
+                                </div>
+                                <div title="S">
+                                    <h3>s</h3>
+                                    <span></span>
+                                    <span>s</span>
+                                </div>
+                                <div title="M">
+                                    <h3>m</h3>
+                                    <span></span>
+                                    <span>m</span>
+                                </div>
+                                <div title="L">
+                                    <h3>l</h3>
+                                    <span></span>
+                                    <span>l</span>
+                                </div>
+                                <div title="XL"> 
+                                    <h3>xl</h3>
+                                    <span></span>
+                                    <span>xl</span>
+                                </div>
+                            </section>
+                        </div>
+                        <!--end of size filter -->
+                        <!-- color filter -->
+                        <div class="filter color">
+                            <h3>color</h3>
+                            <section>
+                                <div  class="white f_c" title="white">
+                                    <h3>white</h3>
+                                     <span></span>
+                                    <span></span>
+                                    <img src="image/tricou-alb3-600x800.jpg" alt="">
+                                    <img src="image/tricou-alb3.jpg" alt="">
+                                </div>
+                                <div class="black" title="black">
+                                    <h3>black</h3>
+                                    <span></span>
+                                    <span></span>
+                                    <img src="image/tricou-negru.jpg" alt="">
+                                    <img src="image/tricou-negru.jpg" alt="">
+                                </div>
+                                <div  class="red" title="red">
+                                    <h3>red</h3>
+                                    <span></span>
+                                    <span></span>
+                                    <img src="image/tricou-red.jpg" alt="">
+                                    <img src="image/tricou-red.jpg" alt="">
+                                </div>
+                                <div  class="green" title="green">
+                                    <h3>green</h3>
+                                    <span></span>
+                                    <span></span>
+                                    <img src="image/tricou-green.jpg" alt="">
+                                    <img src="image/tricou-green.jpg" alt="">
+
+                                </div>
+                                <div class="mongoose" title="mongoose">
+                                    <h3>mongoose</h3>
+                                    <span></span>
+                                    <span></span>
+                                    <img src="image/tricou-army.jpg" alt="">
+                                    <img src="image/tricou-army.jpg" alt="">
+                                </div>
+                                <div class="blue" title="blue">
+                                    <h3>blue</h3>
+                                    <span></span>
+                                    <span></span>
+                                    <img src="image/tricou-blue.jpg" alt="">
+                                    <img src="image/tricou-blue.jpg" alt="">
+                                </div>
+                            </section>
+                        </div>
+                        <!--end of color filter -->
+                        <!-- clear button -->
+                        <input type="text" placeholder="clear" role="button" class="clear">
+                    </div>
+                   <!-- end of customize_filter -->
+                </div>
+                <!-- choose_customize process -->
+                <div class="choose_customize">
+                    <input type="number" class="count" name="count" min="1" step="1" placeholder="1">
+                    <input type="text" class="submit" placeholder="customize">
+                    <div class="choose_wishlist">
+                        <p>
+                            <i class="far fa-heart"></i>
+                            <span>Wishlist</span>
+                        </p>
+                        <p>
+                            <span>Remove from Wishlist</span>
+                        </p>
+                    </div>
+                </div>
+                
+
+                <footer>
+                    <span>SKU:</span>
+                    <h2>customize-tshirt--red</h2>
+                    <span>category:</span>
+                    <a href="#">blank categories</a>
+                </footer>
+
+            </div>
+            <!-- end of custom -->
+        </div>
+        <!-- end of part1 -->
+        <!-- part2 description for product -->
+        <div class="part2">
+            <section>
+                <article class="info">
+                    <h2>ADDITIONAL INFORMATION</h2>
+                    <ul>
+                        <li>ADDITIONAL INFORMATION</li>
+                        <li>
+                            <span>size</span>
+                            <p>XS, S, M, L, XL</p>
+
+                        </li>
+                        <li>
+                            <span>color</span>
+                            <p>White, Black, Red, Green, Mongoose, Midnight Blue</p>
+                        </li>
+                    </ul>
+                </article>
+                <article class="description">
+                    <h2>DESCRIPTION</h2>
+                    <div>
+                        <h2>DESCRIPTION</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla non consequat nunc. Aliquam non suscipit ipsum. Etiam cursus id ligula dignissim elementum.</p>
+                    </div>
+                </article>
+                
+            </section>
+        </div>
+        <!-- end of part2 -->
+        <!-- part3 related product -->
+        <div class="part3">
+            <header class="title">
+                <h2>RELATED PRODUCTS</h2>
+            </header>
+            <section class="related_p">
+                <figure>
+                    <span class="like">
+                        <i class="far fa-heart" index='1'></i>
+                        <i class="fas fa-heart" ></i>
+                    </span>
+                    
+                    <img src="image/iphone-11-pro-max-mockup-case3-343x463_c.jpg" alt="iphone-11-pro-max" title="iphone-11-pro-max">
+                    <figcaption>
+                        <h2><em>customize phone case</em></h2>
+                        <span>£32.00</span>
+                        <p>
+                            <span>select option</span>
+                            <a href="#">more info</a>
+                        </p>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <span class="like">
+                        <i class="far fa-heart" index='1'></i>
+                        <i class="fas fa-heart" ></i>
+                    </span>
+                    <img src="image/iphone-11-pro-max-mockup-case3-343x463_c.jpg" alt="iphone-11-pro-max" title="iphone-11-pro-max">
+                    <figcaption>
+                        <h2><em>customize phone case</em></h2>
+                        <span>£32.00</span>
+                        <p>
+                            <span>select option</span>
+                            <a href="#">more info</a>
+                        </p>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <span class="like">
+                        <i class="far fa-heart" index='1'></i>
+                        <i class="fas fa-heart" ></i>
+                    </span>
+                    <img src="image/iphone-11-pro-max-mockup-case3-343x463_c.jpg" alt="iphone-11-pro-max" title="iphone-11-pro-max">
+                    <figcaption>
+                        <h2><em>customize phone case</em></h2>
+                        <span>£32.00</span>
+                        <p>
+                            <span>select option</span>
+                            <a href="#">more info</a>
+                        </p>
+                    </figcaption>
+                </figure>
+
+            </section>
+        </div>
+        <!-- end of part3 related product -->
+        <!-- start footer -->
+        <footer id="footer">
+            <div id="footer_t">
+                <div>
+                    <div class="newsletter">
+                        <span><i class="far fa-newspaper"></i></span>
+                        <h2>Newsletter</h2>
+                        <p>Weekly tshirt / phone case giveaways. Winners @printivity</p>
+                    </div>   
+                    <!-- /* join us form */ -->
+                    <form action="reg.php" method="get" class="join_form" name="join_us" autocomplete="on">
+                        <label for="para2">
+                            <input id="para2" type="email" name="email" placeholder="email@test.com" required="" autocomplete="on">
+                            <span>join us</span>
+                        </label>
+                    </form>
+                </div>
+                <section>
+                    <ul>
+                        <li>Services</li>
+                        <li><a href="#">My Account</a></li>
+                        <li><a href="#">Orders</a></li>
+                        <li><a href="#">Help</a></li>
+                        <li><a href="#">Contact</a></li>    
+                    </ul>
+                    <ul>
+                        <li>Printivity</li>
+                        <li><a href="#">My Account</a></li>
+                        <li><a href="#">Orders</a></li>
+                        <li><a href="#">Help</a></li>
+                        <li><a href="#">Contact</a></li> 
+                        <li><a href="#">My Account</a></li>
+                        <li><a href="#">Orders</a></li>
+                        <li><a href="#">Help</a></li>
+                        <li><a href="#">Contact</a></li> 
+                    </ul>
+                    <ul>
+                        <li>Products</li>
+                        <li><a href="#">My Account</a></li>
+                        <li><a href="#">Orders</a></li>
+                        <li><a href="#">Help</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                    <ul>
+                        <li>Social Media</li>
+                        <li><a href="#">My Account</a></li>
+                        <li><a href="#">Orders</a></li>
+                    </ul>
+                </section>
+            </div>
+            <div id="footer_b">
+                <p>© PRINTIVITY 2019. All rights reserved. Fatemeezzati.ir</p>
+            </div>
+        </footer>
+    </main>
+
+    <!-- plugin script************************************** -->
+    <script src="jquery.min.js"></script>
+
+
+<script src="js/lightgallery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
+
+ <!-- lightgallery plugins -->
+<script src="js/lg-thumbnail.min.js"></script>
+<script src="js/lg-fullscreen.min.js"></script>
+    
+</body>
+</html>

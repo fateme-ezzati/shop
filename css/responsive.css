@@ -1,0 +1,152 @@
+/*start mobile scope*/
+@media screen and (max-width:767px){
+
+}
+/*start tablet scope*/
+@media screen and (min-width:768px){
+
+}
+/*start desktop scope*/
+@media screen and (min-width:993px){
+    /* desktop menu */
+.d_menu{
+    width: 40%;
+    height: 100%;
+    display: block;
+}
+.d_menu>ul{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.d_menu>ul>li{
+    height: 50%;
+    display: flex;
+    align-items: center;
+    margin-right: 12px;
+    position: relative;
+    /* border: grey 1px solid;
+     */
+}
+.d_menu>ul>li>a{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 6px 12px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
+}
+.d_menu>ul>li>a:hover{
+    color: rgba(0,0,0,.25);
+}
+/* first li sub menu */
+/*  and second sub menu */
+.d_menu>ul>li>ul,.d_menu>ul>li>ul>li>ul{
+    width: 300px;
+    padding: 8px 0;
+    display: none;
+    position: absolute;
+    top: 48px;left: 0;
+    z-index: 30;
+    background: #fff;
+    box-shadow: 0 0 8px rgba(0,0,0,.25);
+    transition: .5s ease;
+}
+.d_menu>ul>li>ul>li,.d_menu>ul>li>ul>li>ul>li{
+    width: 100%;
+    height: 36px;
+    position: relative;
+}
+.d_menu>ul>li>ul>li:nth-of-type(2){
+    border-bottom:1px solid #cccccc5d ;
+    margin-bottom: 20px;
+}
+.d_menu>ul>li>ul>li>a,.d_menu>ul>li>ul>li>ul>li>a{
+    width: 100%;
+    height: 100%;
+    padding: 4px 5px 4px 50px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-weight: bold;
+    font-size: 15px;
+    text-transform: capitalize;
+    color: grey;
+}
+.d_menu>ul>li>ul>li>a:hover,.d_menu>ul>li>ul>li>ul>li>a:hover{
+    color: black;
+    background: #cccccc3f;
+}
+.d_menu>ul>li>ul>li:nth-of-type(3)>a{
+    font-size: 16px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    color: black;
+}
+.line{
+    width: 15px;
+    height: 2px;
+    display: block;
+    background: grey;
+    position: absolute;
+    top: 17px;right: 20px;
+    z-index: 20;
+}
+.d_menu>ul>li:hover>ul{
+    display: block;
+    animation-name: menu_anime;
+    animation-duration: .8s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;
+}
+/*second sub menu */
+.d_menu>ul>li>ul>li>ul{
+    top: -4px;left: 300px;
+    display: none;
+}
+.d_menu>ul>li>ul>li:hover>ul{
+    display: block;
+    animation-name: menu_anime;
+    animation-duration: .8s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;
+}
+/* mobile_menu_controler */
+.m_menu_controler{
+    display: none;
+}
+/* part1 customize T-shirt */
+.part1>*{
+    width: 50%; 
+ }
+ /* footer */
+ #footer_t>div{
+     width: 33%;
+ }
+ #footer_t>section{
+     width: 67%;
+ }
+
+}
+/*start bigscreen scope*/
+@media screen and (min-width:1200px){
+    
+}
+
+/* animation*********** */
+@keyframes menu_anime{
+    from{
+        opacity: 0;
+        visibility: hidden;
+        margin-top: 15px;
+    }to{
+        opacity: 1;
+        visibility: visible;
+        margin-top: 0;
+    }
+}
